@@ -102,7 +102,7 @@ namespace yallakora_App
 
         private void btnMatch_Click(object sender, EventArgs e)
         {
-            activateButton(sender);
+            OpenChildForm(new AddMatchForm(), sender);
         }
 
         private void btnInfo_Click(object sender, EventArgs e)

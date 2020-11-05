@@ -52,6 +52,12 @@
     <Compile Include="AddLeagueForm.Designer.cs">
       <DependentUpon>AddLeagueForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddMatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMatchForm.Designer.cs">
+      <DependentUpon>AddMatchForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPlayerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="AddLeagueForm.resx">
       <DependentUpon>AddLeagueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMatchForm.resx">
+      <DependentUpon>AddMatchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddPlayerForm.resx">
       <DependentUpon>AddPlayerForm.cs</DependentUpon>
