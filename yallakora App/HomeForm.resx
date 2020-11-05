@@ -117,4 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="sqlCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 19</value>
+  </metadata>
+  <data name="sqlCommand1.CommandText" xml:space="preserve">
+    <value>SELECT        goals.*, leagues.*, matches.*, players.*, teams.*, red_cards.*, yellow_cards.*
+FROM            goals INNER JOIN
+                         matches ON goals.match_id = matches.match_id INNER JOIN
+                         players ON goals.player_id = players.player_id INNER JOIN
+                         red_cards ON matches.match_id = red_cards.match_id AND players.player_id = red_cards.player_id INNER JOIN
+                         teams ON goals.team_id = teams.team_id AND matches.team1_id = teams.team_id AND matches.team2_id = teams.team_id AND players.team_id = teams.team_id AND red_cards.team_id = teams.team_id INNER JOIN
+                         leagues ON teams.league_id = leagues.league_id INNER JOIN
+                         yellow_cards ON matches.match_id = yellow_cards.match_id AND players.player_id = yellow_cards.player_id AND teams.team_id = yellow_cards.team_id</value>
+  </data>
+  <metadata name="sqlConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>147, 19</value>
+  </metadata>
 </root>

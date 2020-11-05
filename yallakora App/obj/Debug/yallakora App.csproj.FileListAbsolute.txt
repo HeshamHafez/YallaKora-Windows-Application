@@ -1,0 +1,11 @@
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Properties.Resources.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csproj.GenerateResource.cache
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csproj.CoreCompileInputs.cache
+E:\C# project\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.exe.config
+E:\C# project\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.exe
+E:\C# project\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.pdb
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.HomeForm.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.exe
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.pdb
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddLeagueForm.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csprojAssemblyReference.cache
