@@ -65,6 +65,7 @@
             this.comboStatus.Name = "comboStatus";
             this.comboStatus.Size = new System.Drawing.Size(190, 21);
             this.comboStatus.TabIndex = 55;
+            this.comboStatus.SelectedIndexChanged += new System.EventHandler(this.comboStatus_SelectedIndexChanged);
             // 
             // comboTeam2
             // 

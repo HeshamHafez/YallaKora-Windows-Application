@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInfoForm.Designer.cs">
+      <DependentUpon>AddInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddLeagueForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="AddInfoForm.resx">
+      <DependentUpon>AddInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddLeagueForm.resx">
       <DependentUpon>AddLeagueForm.cs</DependentUpon>
     </EmbeddedResource>

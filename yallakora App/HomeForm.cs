@@ -107,7 +107,7 @@ namespace yallakora_App
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            activateButton(sender);
+            OpenChildForm(new AddInfoForm(), sender);
         }
     }
 }
