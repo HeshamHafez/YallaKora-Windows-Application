@@ -52,6 +52,18 @@
     <Compile Include="AddLeagueForm.Designer.cs">
       <DependentUpon>AddLeagueForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPlayerForm.Designer.cs">
+      <DependentUpon>AddPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeamForm.Designer.cs">
+      <DependentUpon>AddTeamForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="AddLeagueForm.resx">
       <DependentUpon>AddLeagueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPlayerForm.resx">
+      <DependentUpon>AddPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeamForm.resx">
+      <DependentUpon>AddTeamForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>

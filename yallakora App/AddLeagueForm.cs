@@ -19,10 +19,11 @@ namespace yallakora_App
 
         private void btnLeague_Click(object sender, EventArgs e)
         {
-            sqlCommand1.CommandText = "INSERT INTO leagues (name) VALUES(' " + textBox1.Text + " ')";
+            sqlCommand1.CommandText = "INSERT INTO leagues (name) VALUES(' " + textBoxLeague.Text + " ')";
             sqlConnection1.Open();
             sqlCommand1.ExecuteNonQuery();
             sqlConnection1.Close();
         }
+
     }
 }

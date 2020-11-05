@@ -92,12 +92,12 @@ namespace yallakora_App
 
         private void btnTeam_Click(object sender, EventArgs e)
         {
-            activateButton(sender);
+            OpenChildForm(new AddTeamForm(), sender);
         }
 
         private void btnPlayer_Click(object sender, EventArgs e)
         {
-            activateButton(sender);
+            OpenChildForm(new AddPlayerForm(), sender);
         }
 
         private void btnMatch_Click(object sender, EventArgs e)

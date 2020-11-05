@@ -9,3 +9,5 @@ E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora Ap
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.pdb
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddLeagueForm.resources
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csprojAssemblyReference.cache
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddTeamForm.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddPlayerForm.resources
