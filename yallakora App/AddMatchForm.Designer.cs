@@ -196,6 +196,7 @@
             this.btnAddMatch.TabIndex = 58;
             this.btnAddMatch.Text = "Add";
             this.btnAddMatch.UseVisualStyleBackColor = true;
+            this.btnAddMatch.Click += new System.EventHandler(this.btnAddMatch_Click_1);
             // 
             // sqlCommand1
             // 

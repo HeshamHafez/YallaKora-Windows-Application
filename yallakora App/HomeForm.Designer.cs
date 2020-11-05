@@ -42,9 +42,12 @@
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.sqlCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -182,6 +185,7 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 80);
             this.panelDesktop.Name = "panelDesktop";
@@ -198,6 +202,15 @@
             this.sqlConnection1.ConnectionString = "Data Source=.;Initial Catalog=project;Integrated Security=True";
             this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::yallakora_App.Properties.Resources.YallaKora_Egypt_22192_1485420989;
+            this.pictureBox1.Location = new System.Drawing.Point(200, 142);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(330, 146);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,6 +226,8 @@
             this.panelLogo.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,6 +247,7 @@
         private System.Windows.Forms.Panel panelDesktop;
         private System.Data.SqlClient.SqlCommand sqlCommand1;
         private System.Data.SqlClient.SqlConnection sqlConnection1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
