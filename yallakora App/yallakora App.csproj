@@ -46,62 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddInfoForm.cs">
+    <Compile Include="Info Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddInfoForm.Designer.cs">
-      <DependentUpon>AddInfoForm.cs</DependentUpon>
+    <Compile Include="Info Panel.Designer.cs">
+      <DependentUpon>Info Panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddLeagueForm.cs">
+    <Compile Include="League Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddLeagueForm.Designer.cs">
-      <DependentUpon>AddLeagueForm.cs</DependentUpon>
+    <Compile Include="League Panel.Designer.cs">
+      <DependentUpon>League Panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddMatchForm.cs">
+    <Compile Include="Match Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddMatchForm.Designer.cs">
-      <DependentUpon>AddMatchForm.cs</DependentUpon>
+    <Compile Include="Match Panel.Designer.cs">
+      <DependentUpon>Match Panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPlayerForm.cs">
+    <Compile Include="Player Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPlayerForm.Designer.cs">
-      <DependentUpon>AddPlayerForm.cs</DependentUpon>
+    <Compile Include="Player Panel.Designer.cs">
+      <DependentUpon>Player Panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddTeamForm.cs">
+    <Compile Include="Team Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddTeamForm.Designer.cs">
-      <DependentUpon>AddTeamForm.cs</DependentUpon>
+    <Compile Include="Team Panel.Designer.cs">
+      <DependentUpon>Team Panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeForm.cs">
+    <Compile Include="Home Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeForm.Designer.cs">
-      <DependentUpon>HomeForm.cs</DependentUpon>
+    <Compile Include="Home Panel.Designer.cs">
+      <DependentUpon>Home Panel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
-    <EmbeddedResource Include="AddInfoForm.resx">
-      <DependentUpon>AddInfoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Info Panel.resx">
+      <DependentUpon>Info Panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddLeagueForm.resx">
-      <DependentUpon>AddLeagueForm.cs</DependentUpon>
+    <EmbeddedResource Include="League Panel.resx">
+      <DependentUpon>League Panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddMatchForm.resx">
-      <DependentUpon>AddMatchForm.cs</DependentUpon>
+    <EmbeddedResource Include="Match Panel.resx">
+      <DependentUpon>Match Panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPlayerForm.resx">
-      <DependentUpon>AddPlayerForm.cs</DependentUpon>
+    <EmbeddedResource Include="Player Panel.resx">
+      <DependentUpon>Player Panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddTeamForm.resx">
-      <DependentUpon>AddTeamForm.cs</DependentUpon>
+    <EmbeddedResource Include="Team Panel.resx">
+      <DependentUpon>Team Panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeForm.resx">
-      <DependentUpon>HomeForm.cs</DependentUpon>
+    <EmbeddedResource Include="Home Panel.resx">
+      <DependentUpon>Home Panel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

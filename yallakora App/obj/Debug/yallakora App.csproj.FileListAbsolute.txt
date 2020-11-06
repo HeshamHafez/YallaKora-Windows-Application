@@ -7,12 +7,6 @@ E:\C# project\YallaKora Windows Application\yallakora App\bin\Debug\yallakora Ap
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.HomeForm.resources
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.exe
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.pdb
-E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddLeagueForm.resources
-E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csprojAssemblyReference.cache
-E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddTeamForm.resources
-E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddPlayerForm.resources
-E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddMatchForm.resources
-E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddInfoForm.resources
 C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.exe.config
 C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.exe
 C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.pdb
@@ -28,3 +22,9 @@ C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\
 C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csproj.CoreCompileInputs.cache
 C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.exe
 C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.pdb
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Info.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.League.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Match.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Player.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Team.resources
+E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csprojAssemblyReference.cache
