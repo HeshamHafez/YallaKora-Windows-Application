@@ -75,5 +75,24 @@ namespace yallakora_App
             textBoxAge.Text = "";
             textBoxNum.Text = "";
         }
+
+        private void AddPlayerForm_Load(object sender, EventArgs e)
+        {
+            loadTheme();
+        }
+        private void loadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+        }
     }
 }

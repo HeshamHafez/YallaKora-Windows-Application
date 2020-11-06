@@ -63,6 +63,16 @@ namespace yallakora_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cross_out__2_ {
+            get {
+                object obj = ResourceManager.GetObject("cross-out (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap YallaKora_Egypt_22192_1485420989 {
             get {
                 object obj = ResourceManager.GetObject("YallaKora-Egypt-22192-1485420989", resourceCulture);

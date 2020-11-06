@@ -17,6 +17,26 @@ namespace yallakora_App
             InitializeComponent();
         }
 
+        private void AddLeagueForm_Load(object sender, EventArgs e)
+        {
+            loadTheme();
+        }
+
+        private void loadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
+        }
+
         private void btnLeague_Click(object sender, EventArgs e)
         {
             sqlCommand1.CommandText = "INSERT INTO leagues (name) VALUES('" + textBoxLeague.Text + "')";
@@ -25,6 +45,7 @@ namespace yallakora_App
             sqlConnection1.Close();
             textBoxLeague.Text = "";
         }
+
 
     }
 }

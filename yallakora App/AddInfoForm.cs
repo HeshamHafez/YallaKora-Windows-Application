@@ -161,7 +161,10 @@ namespace yallakora_App
             selected_playerId = found.value;
 
             teamScored = 1;
-            comboTeam2.Text = "";
+            if (comboTeam1.SelectedIndex != -1 && comboTeam2.SelectedIndex != -1)
+            {
+                comboTeam2.SelectedIndex = -1;
+            }
         }
 
         private void comboTeam2_SelectedIndexChanged(object sender, EventArgs e)
@@ -174,7 +177,10 @@ namespace yallakora_App
             selected_playerId = found.value;
 
             teamScored = 2;
-            comboTeam1.Text = "";
+            if(comboTeam1.SelectedIndex != -1 && comboTeam2.SelectedIndex != -1)
+            {
+                comboTeam1.SelectedIndex = -1;
+            }
         }
         public int team1Counter;
         public int team2Counter;
@@ -372,6 +378,25 @@ namespace yallakora_App
             tbTeam2.Text = "";
             tbTeam1Score.Text = "";
             tbTeam2Score.Text = "";
+        }
+
+        private void AddInfoForm_Load(object sender, EventArgs e)
+        {
+            loadTheme();
+        }
+        private void loadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+
+                    btn.BackColor = ThemeColor.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
+                }
+            }
         }
     }
 }

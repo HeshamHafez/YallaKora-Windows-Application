@@ -121,4 +121,7 @@
   <data name="YallaKora-Egypt-22192-1485420989" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\YallaKora-Egypt-22192-1485420989.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cross-out (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross-out (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

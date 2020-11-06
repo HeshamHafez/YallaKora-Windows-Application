@@ -22,6 +22,9 @@ namespace yallakora_App
         {
             InitializeComponent();
             random = new Random();
+            //the btnHome Button is not visible as defualt
+            btnHome.Visible = false;
+
         }
 
         private Color selectThemeColor()
@@ -50,6 +53,9 @@ namespace yallakora_App
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    ThemeColor.PrimaryColor = color;
+                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    btnHome.Visible = true;
                 }
             }
         }
@@ -109,5 +115,23 @@ namespace yallakora_App
         {
             OpenChildForm(new AddInfoForm(), sender);
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            Reset(); 
+        }
+
+        private void Reset()
+        {
+            disableButton();
+            lblTitle.Text = "HOME";
+            panelTitleBar.BackColor = Color.FromArgb(0, 150, 136);
+            panelLogo.BackColor = Color.FromArgb(39, 39, 58);
+            currentButton = null;
+            btnHome.Visible = false;
+        }
+
     }
 }

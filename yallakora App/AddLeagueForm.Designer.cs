@@ -114,6 +114,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddLeagueForm";
             this.Text = "AddLeagueForm";
+            this.Load += new System.EventHandler(this.AddLeagueForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

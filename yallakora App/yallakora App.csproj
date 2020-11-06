@@ -129,5 +129,8 @@
   <ItemGroup>
     <None Include="Resources\YallaKora-Egypt-22192-1485420989.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-out %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
