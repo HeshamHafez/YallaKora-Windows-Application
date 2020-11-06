@@ -133,8 +133,10 @@
             this.tbTeam2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbTeam2.Location = new System.Drawing.Point(513, 149);
             this.tbTeam2.Name = "tbTeam2";
+            this.tbTeam2.ReadOnly = true;
             this.tbTeam2.Size = new System.Drawing.Size(122, 20);
             this.tbTeam2.TabIndex = 77;
+            this.tbTeam2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbTeam2Score
             // 
@@ -159,8 +161,10 @@
             this.tbTeam1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbTeam1.Location = new System.Drawing.Point(194, 149);
             this.tbTeam1.Name = "tbTeam1";
+            this.tbTeam1.ReadOnly = true;
             this.tbTeam1.Size = new System.Drawing.Size(122, 20);
             this.tbTeam1.TabIndex = 74;
+            this.tbTeam1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -187,6 +191,7 @@
             // comboLeague
             // 
             this.comboLeague.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboLeague.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLeague.FormattingEnabled = true;
             this.comboLeague.Location = new System.Drawing.Point(352, 9);
             this.comboLeague.Name = "comboLeague";
@@ -220,6 +225,7 @@
             // comboMatch
             // 
             this.comboMatch.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboMatch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMatch.FormattingEnabled = true;
             this.comboMatch.Location = new System.Drawing.Point(352, 62);
             this.comboMatch.Name = "comboMatch";
@@ -252,6 +258,7 @@
             // comboTeam2
             // 
             this.comboTeam2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboTeam2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTeam2.FormattingEnabled = true;
             this.comboTeam2.Location = new System.Drawing.Point(498, 194);
             this.comboTeam2.Name = "comboTeam2";
@@ -289,6 +296,7 @@
             // comboTeam1
             // 
             this.comboTeam1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboTeam1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTeam1.FormattingEnabled = true;
             this.comboTeam1.Location = new System.Drawing.Point(181, 194);
             this.comboTeam1.Name = "comboTeam1";

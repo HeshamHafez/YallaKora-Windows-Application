@@ -108,6 +108,7 @@
             // comboTeam
             // 
             this.comboTeam.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboTeam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTeam.FormattingEnabled = true;
             this.comboTeam.Location = new System.Drawing.Point(430, 30);
             this.comboTeam.Name = "comboTeam";

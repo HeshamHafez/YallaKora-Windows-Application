@@ -60,6 +60,7 @@
             // comboStatus
             // 
             this.comboStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboStatus.FormattingEnabled = true;
             this.comboStatus.Location = new System.Drawing.Point(351, 180);
             this.comboStatus.Name = "comboStatus";
@@ -70,6 +71,7 @@
             // comboTeam2
             // 
             this.comboTeam2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboTeam2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTeam2.FormattingEnabled = true;
             this.comboTeam2.Location = new System.Drawing.Point(444, 113);
             this.comboTeam2.Name = "comboTeam2";
@@ -80,6 +82,7 @@
             // comboTeam1
             // 
             this.comboTeam1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboTeam1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTeam1.FormattingEnabled = true;
             this.comboTeam1.Location = new System.Drawing.Point(228, 111);
             this.comboTeam1.Name = "comboTeam1";
@@ -90,6 +93,7 @@
             // comboLeague
             // 
             this.comboLeague.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboLeague.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLeague.FormattingEnabled = true;
             this.comboLeague.Location = new System.Drawing.Point(360, 13);
             this.comboLeague.Name = "comboLeague";

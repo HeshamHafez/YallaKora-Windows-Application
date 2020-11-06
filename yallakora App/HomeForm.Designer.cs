@@ -40,9 +40,9 @@
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sqlCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -192,6 +192,15 @@
             this.panelDesktop.Size = new System.Drawing.Size(684, 381);
             this.panelDesktop.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::yallakora_App.Properties.Resources.YallaKora_Egypt_22192_1485420989;
+            this.pictureBox1.Location = new System.Drawing.Point(200, 142);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(330, 146);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // sqlCommand1
             // 
             this.sqlCommand1.CommandText = resources.GetString("sqlCommand1.CommandText");
@@ -201,15 +210,6 @@
             // 
             this.sqlConnection1.ConnectionString = "Data Source=.;Initial Catalog=project;Integrated Security=True";
             this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::yallakora_App.Properties.Resources.YallaKora_Egypt_22192_1485420989;
-            this.pictureBox1.Location = new System.Drawing.Point(200, 142);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 146);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // HomeForm
             // 

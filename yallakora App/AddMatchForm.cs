@@ -97,14 +97,13 @@ namespace yallakora_App
         }
 
         private void btnAddMatch_Click_1(object sender, EventArgs e)
-        {
+        { 
             sqlCommand1.CommandText = "INSERT INTO matches (team1_id,team2_id, team1_score, team2_score, status, date)" +
             " VALUES((select team_id from teams where name='" + team1Index + "') ," +
             "(select team_id from teams where name='" + team2Index + "'), 0, 0,'" + statusIndex + "','" + MatchDate.Text + "')";
             sqlConnection1.Open();
             sqlCommand1.ExecuteNonQuery();
             sqlConnection1.Close();
-
         }
     }
 }

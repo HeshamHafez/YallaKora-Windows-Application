@@ -44,11 +44,36 @@ namespace yallakora_App
 
         private void btnAddPlayer_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(textBoxAge.Text) || String.IsNullOrEmpty(textBoxNum.Text) || String.IsNullOrEmpty(textBoxPlayer.Text))
+            {
+                MessageBox.Show("Please enter player's full data!");
+                return;
+            }
+            sqlCommand1.CommandText = "select number from players where team_id in (select team_id from teams where name = '" + comboTeam.Text + "')";
+            SqlDataReader dReader;
+            sqlConnection1.Open();
+            dReader = sqlCommand1.ExecuteReader();
+            while (dReader.Read())
+            {
+                if ((int)dReader[0] == int.Parse(textBoxNum.Text))
+                {
+                    MessageBox.Show("Number is already taken");
+                    dReader.Close();
+                    sqlConnection1.Close();
+                    return;
+                }
+            }
+            dReader.Close();
+            sqlConnection1.Close();
+
             sqlCommand1.CommandText = "insert into players (fullname, team_id, age, number) values('" + textBoxPlayer.Text + "'," +
             " (select team_id from teams where name='" + index + "'), " + textBoxAge.Text + ", " + textBoxNum.Text + ")";
             sqlConnection1.Open();
             sqlCommand1.ExecuteNonQuery();
             sqlConnection1.Close();
+            textBoxPlayer.Text = "";
+            textBoxAge.Text = "";
+            textBoxNum.Text = "";
         }
     }
 }

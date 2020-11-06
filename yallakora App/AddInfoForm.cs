@@ -15,7 +15,7 @@ namespace yallakora_App
     {
         private string matchIndex;
         private string leagueIndex;
-        public string matchId;
+        public int matchId;
         private int team1_Id;
         private int team2_Id;
         private int selected_playerId;
@@ -42,10 +42,22 @@ namespace yallakora_App
             sqlConnection1.Close();
         }
 
+
+        public class ComboKeys
+        {
+            public string name { get; set; }
+            public int value { get; set; }
+        }
+
+        public List<ComboKeys> teams = new List<ComboKeys>();
+        public List<ComboKeys> team1Players = new List<ComboKeys>();
+        public List<ComboKeys> team2Players = new List<ComboKeys>();
+
+
         private void comboLeague_SelectedIndexChanged(object sender, EventArgs e)
         {
             leagueIndex = comboLeague.Text;
-            sqlCommand1.CommandText = "select concat(t1.name,' vs ',t2.name),match_id from matches m  inner join teams t1 "
+            sqlCommand1.CommandText = "select concat(t1.name,' vs ',t2.name), match_id, status from matches m  inner join teams t1 "
                                 + "on m.team1_id = t1.team_id inner join teams t2 on m.team2_id = t2.team_id "
                                 + "where t1.league_id = (select league_id from leagues where name ='" + leagueIndex + "' ) ";
             SqlDataReader dReader;
@@ -54,7 +66,12 @@ namespace yallakora_App
             comboMatch.Items.Clear();
             while (dReader.Read())
             {
-                comboMatch.Items.Add(dReader[1] + " " + (string)dReader[0]);
+                if ((string)dReader[2] == "finished")
+                {
+                    continue;
+                }
+                    teams.Add(new ComboKeys() { name = (string)dReader[0], value = (int)dReader[1] });
+                    comboMatch.Items.Add(dReader[0]);
             }
 
             dReader.Close();
@@ -63,8 +80,17 @@ namespace yallakora_App
 
         private void comboMatch_SelectedIndexChanged(object sender, EventArgs e)
         {
-            matchIndex = comboMatch.Text;
-            matchId = matchIndex.Substring(0, 1);
+            /*matchIndex = comboMatch.Text;
+            int firstSpace = matchIndex.IndexOf(" ");
+            matchId = matchIndex.Substring(0, firstSpace);*/
+
+            string str = comboMatch.Text;
+            ComboKeys found = teams.Find(x => x.name.Contains(str));
+            matchId = found.value;
+
+            team1Counter = 0;
+            team2Counter = 0;
+
             sqlCommand1.CommandText = "select team1_id, team2_id from matches inner join teams on team1_id = team_id where match_id =" + matchId;
             SqlDataReader dReaderGetTeamID;
             sqlConnection1.Open();
@@ -104,7 +130,8 @@ namespace yallakora_App
             comboTeam1.Items.Clear();
             while (dReader2.Read())
             {
-                comboTeam1.Items.Add((int)dReader2[1] + " " + (string)dReader2[0]);
+                team1Players.Add(new ComboKeys() { name = (string)dReader2[0], value = (int)dReader2[1] });
+                comboTeam1.Items.Add(dReader2[0]);
             }
 
             dReader2.Close();
@@ -115,7 +142,8 @@ namespace yallakora_App
             comboTeam2.Items.Clear();
             while (dReader3.Read())
             {
-                comboTeam2.Items.Add((int)dReader3[1] + " " + (string)dReader3[0]);
+                team2Players.Add(new ComboKeys() { name = (string)dReader3[0], value = (int)dReader3[1] });
+                comboTeam2.Items.Add(dReader3[0]);
             }
 
             dReader3.Close();
@@ -125,35 +153,79 @@ namespace yallakora_App
 
         private void comboTeam1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selected_playerId = int.Parse(comboTeam1.Text.Substring(0, 1));
+            /*int firstSpace = matchIndex.IndexOf(" ");
+            selected_playerId = int.Parse(comboTeam1.Text.Substring(0, firstSpace));*/
+
+            string str = comboTeam1.Text;
+            ComboKeys found = team1Players.Find(x => x.name.Contains(str));
+            selected_playerId = found.value;
+
             teamScored = 1;
             comboTeam2.Text = "";
         }
 
         private void comboTeam2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selected_playerId = int.Parse(comboTeam2.Text.Substring(0, 1));
+            /*int firstSpace = matchIndex.IndexOf(" ");
+            selected_playerId = int.Parse(comboTeam2.Text.Substring(0, firstSpace));*/
+
+            string str = comboTeam2.Text;
+            ComboKeys found = team2Players.Find(x => x.name.Contains(str));
+            selected_playerId = found.value;
+
             teamScored = 2;
             comboTeam1.Text = "";
         }
-
+        public int team1Counter;
+        public int team2Counter;
         private void btnSaveInfo_Click(object sender, EventArgs e)
         {
+            
+            if (String.IsNullOrEmpty(tbTeam1Score.Text) || String.IsNullOrEmpty(tbTeam2Score.Text))
+            {
+                MessageBox.Show("Enter match score!");
+                return;
+            }
             sqlConnection1.Open();
 
+            int team1score = int.Parse(tbTeam1Score.Text);
+            int team2score = int.Parse(tbTeam2Score.Text);
+            /*MessageBox.Show(team1Counter.ToString());
+            MessageBox.Show((int.Parse(tbGoals.Text) + team1Counter).ToString());*/
             if (teamScored == 1)
             {
                 if (!String.IsNullOrEmpty(tbGoals.Text))
                 {
+                    if ((int.Parse(tbGoals.Text) + team1Counter) > team1score)
+                    {
+                        MessageBox.Show("Entered goals are more than match score");
+                        sqlConnection1.Close();
+                        return;
+                    }
                     for (int i = 0; i < int.Parse(tbGoals.Text); i++)
                     {
+
+                        if (team1Counter == team1score)
+                        {
+                            MessageBox.Show("All goals are accounted for");
+                            sqlConnection1.Close();
+                            return;
+                        }
+
                         sqlCommand1.CommandText = "insert into goals (match_id, player_id, team_id, team_scored_against_id) values(' " + matchId + " ', '"
                             + selected_playerId + "', '" + team1_Id + "', '" + team2_Id + "')";
                         sqlCommand1.ExecuteNonQuery();
+                        team1Counter++;
                     }
                 }
                 if (!String.IsNullOrEmpty(tbYellowCards.Text))
                 {
+                    if (int.Parse(tbYellowCards.Text) > 2)
+                    {
+                        MessageBox.Show("Yellow cards can't be more than 2");
+                        sqlConnection1.Close();
+                        return;
+                    }
                     for (int i = 0; i < int.Parse(tbYellowCards.Text); i++)
                     {
                         sqlCommand1.CommandText = "insert into yellow_cards (match_id, player_id, team_id) values(' " + matchId + " ', '"
@@ -163,6 +235,12 @@ namespace yallakora_App
                 }
                 if (!String.IsNullOrEmpty(tbRedCards.Text))
                 {
+                    if (int.Parse(tbRedCards.Text) > 1)
+                    {
+                        MessageBox.Show("Red cards can't be more than 1");
+                        sqlConnection1.Close();
+                        return;
+                    }
                     for (int i = 0; i < int.Parse(tbRedCards.Text); i++)
                     {
                         sqlCommand1.CommandText = "insert into red_cards (match_id, player_id, team_id) values(' " + matchId + " ', '"
@@ -175,24 +253,50 @@ namespace yallakora_App
             {
                 if (!String.IsNullOrEmpty(tbGoals.Text))
                 {
+                    if ((int.Parse(tbGoals.Text) + team2Counter) > team2score)
+                    {
+                        MessageBox.Show("Entered goals are more than match score");
+                        sqlConnection1.Close();
+                        return;
+                    }
                     for (int i = 0; i < int.Parse(tbGoals.Text); i++)
                     {
+                        if (team2Counter == team2score)
+                        {
+                            MessageBox.Show("All goals are accounted for");
+                            sqlConnection1.Close();
+                            return;
+                        }
                         sqlCommand1.CommandText = "insert into goals (match_id, player_id, team_id, team_scored_against_id) values(' " + matchId + " ', '"
                         + selected_playerId + "', '" + team2_Id + "', '" + team1_Id + "')";
                         sqlCommand1.ExecuteNonQuery();
+                        team2Counter++;
                     }
                 }
                 if (!String.IsNullOrEmpty(tbYellowCards.Text))
                 {
-                    for (int i = 0; i < int.Parse(tbYellowCards.Text); i++)
+                    if (int.Parse(tbYellowCards.Text) > 2)
                     {
-                        sqlCommand1.CommandText = "insert into yellow_cards (match_id, player_id, team_id) values(' " + matchId + " ', '"
-                            + selected_playerId + "', '" + team2_Id + "')";
-                        sqlCommand1.ExecuteNonQuery();
+                        MessageBox.Show("Yellow cards can't be more than 2");
+                        sqlConnection1.Close();
+                        return;
                     }
+                    for (int i = 0; i < int.Parse(tbYellowCards.Text); i++)
+                        {
+                            sqlCommand1.CommandText = "insert into yellow_cards (match_id, player_id, team_id) values(' " + matchId + " ', '"
+                                + selected_playerId + "', '" + team2_Id + "')";
+                            sqlCommand1.ExecuteNonQuery();
+                        }
+                    
                 }
                 if (!String.IsNullOrEmpty(tbRedCards.Text))
                 {
+                    if (int.Parse(tbRedCards.Text) > 1)
+                    {
+                        MessageBox.Show("Red cards can't be more than 1");
+                        sqlConnection1.Close();
+                        return;
+                    }
                     for (int i = 0; i < int.Parse(tbRedCards.Text); i++)
                     {
                         sqlCommand1.CommandText = "insert into red_cards (match_id, player_id, team_id) values(' " + matchId + " ', '"
@@ -206,11 +310,30 @@ namespace yallakora_App
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            sqlConnection1.Open();
 
-            sqlCommand1.CommandText = "update  matches set team1_score = " + tbTeam1Score.Text + "" +
-                ", team2_score = " + tbTeam2Score.Text + ", status = 'finished' where match_id=" + matchId;
+
+            if (String.IsNullOrEmpty(tbTeam1Score.Text) || String.IsNullOrEmpty(tbTeam2Score.Text))
+            {
+                MessageBox.Show("Please enter match score!");
+                return;
+            }
+            if(team1Counter != int.Parse(tbTeam1Score.Text))
+            {
+                MessageBox.Show("All home team goals are not registered for players");
+                return;
+            }
+            if(team2Counter != int.Parse(tbTeam2Score.Text))
+            {
+                MessageBox.Show("All away team goals are not registered for players");
+                return;
+            }
+
+            sqlConnection1.Open();
+            sqlCommand1.CommandText = "update matches set team1_score = " + tbTeam1Score.Text
+            + ", team2_score = " + tbTeam2Score.Text + ", status = 'finished' where match_id=" + matchId;
             sqlCommand1.ExecuteNonQuery();
+
+            /*MessageBox.Show(tbTeam1Score.Text, tbTeam2Score.Text);*/
 
             if (int.Parse(tbTeam1Score.Text) > int.Parse(tbTeam2Score.Text))
             {
@@ -240,6 +363,15 @@ namespace yallakora_App
                 sqlCommand1.ExecuteNonQuery();
             }
             sqlConnection1.Close();
+            comboLeague.SelectedIndex = -1;
+            comboMatch.SelectedIndex = -1;
+            comboTeam1.SelectedIndex = -1;
+            comboTeam2.SelectedIndex = -1;
+            tbGoals.Text = "";
+            tbTeam1.Text = "";
+            tbTeam2.Text = "";
+            tbTeam1Score.Text = "";
+            tbTeam2Score.Text = "";
         }
     }
 }

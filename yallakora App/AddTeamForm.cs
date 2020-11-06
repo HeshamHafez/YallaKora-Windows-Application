@@ -49,6 +49,8 @@ namespace yallakora_App
             sqlConnection1.Open();
             sqlCommand1.ExecuteNonQuery();
             sqlConnection1.Close();
+            textBoxTeam.Text = "";
+            textBoxCoach.Text = "";
         }
     }
 }

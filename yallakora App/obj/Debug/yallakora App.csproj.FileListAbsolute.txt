@@ -13,3 +13,18 @@ E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_Ap
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddPlayerForm.resources
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddMatchForm.resources
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddInfoForm.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.exe.config
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.exe
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\bin\Debug\yallakora App.pdb
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csprojAssemblyReference.cache
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddInfoForm.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddLeagueForm.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddMatchForm.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddPlayerForm.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.AddTeamForm.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.HomeForm.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Properties.Resources.resources
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csproj.GenerateResource.cache
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csproj.CoreCompileInputs.cache
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.exe
+C:\Users\Amr\source\repos\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.pdb

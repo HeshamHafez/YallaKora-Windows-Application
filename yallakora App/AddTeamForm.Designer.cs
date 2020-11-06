@@ -87,6 +87,7 @@
             // comboLeague
             // 
             this.comboLeague.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboLeague.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLeague.FormattingEnabled = true;
             this.comboLeague.Location = new System.Drawing.Point(415, 62);
             this.comboLeague.Name = "comboLeague";
