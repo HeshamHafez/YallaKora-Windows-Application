@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.PictureBox pictureBox1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnLeague = new System.Windows.Forms.Button();
@@ -40,22 +39,10 @@
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.sqlCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
-            pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
-            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = global::Project_Client.Properties.Resources.YallaKora_Egypt_22192_1485420989;
-            pictureBox1.Location = new System.Drawing.Point(193, 139);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(309, 117);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // panelMenu
             // 
@@ -141,7 +128,6 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.Controls.Add(pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 80);
             this.panelDesktop.Name = "panelDesktop";
@@ -170,13 +156,11 @@
             this.Controls.Add(this.panelMenu);
             this.Name = "Home";
             this.Text = "Home";
-            ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            this.panelDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
