@@ -28,3 +28,18 @@ E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_Ap
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Player.resources
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora_App.Team.resources
 E:\C# project\YallaKora Windows Application\yallakora App\obj\Debug\yallakora App.csprojAssemblyReference.cache
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\bin\Debug\yallakora App.exe.config
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\bin\Debug\yallakora App.exe
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\bin\Debug\yallakora App.pdb
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora App.csprojAssemblyReference.cache
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora_App.Info.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora_App.League.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora_App.Match.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora_App.Player.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora_App.Team.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora_App.HomeForm.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora_App.Properties.Resources.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora App.csproj.GenerateResource.cache
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora App.csproj.CoreCompileInputs.cache
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora App.exe
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Admin-Side\obj\Debug\yallakora App.pdb

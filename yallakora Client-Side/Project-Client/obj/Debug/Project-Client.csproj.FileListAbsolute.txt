@@ -35,3 +35,16 @@ E:\C# project\YallaKora Windows Application\Project-Client\Project-Client\bin\De
 E:\C# project\YallaKora Windows Application\Project-Client\Project-Client\bin\Debug\Project-Client.exe
 E:\C# project\YallaKora Windows Application\Project-Client\Project-Client\bin\Debug\Project-Client.pdb
 E:\C# project\YallaKora Windows Application\Project-Client\Project-Client\obj\Debug\Project_Client.LeagueInfo.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\bin\Debug\Project-Client.exe.config
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\bin\Debug\Project-Client.exe
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\bin\Debug\Project-Client.pdb
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project-Client.csprojAssemblyReference.cache
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project_Client.LeagueInfo.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project_Client.Home.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project_Client.Match.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project_Client.Properties.Resources.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project_Client.Team.resources
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project-Client.csproj.GenerateResource.cache
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project-Client.csproj.CoreCompileInputs.cache
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project-Client.exe
+C:\Users\Amr\source\repos\YallaKora-Windows-Application\yallakora Client-Side\Project-Client\obj\Debug\Project-Client.pdb

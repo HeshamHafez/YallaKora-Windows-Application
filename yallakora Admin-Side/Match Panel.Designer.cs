@@ -209,7 +209,8 @@
             // 
             // sqlConnection1
             // 
-            this.sqlConnection1.ConnectionString = "Data Source=.;Initial Catalog=project;Integrated Security=True";
+            this.sqlConnection1.ConnectionString = "Data Source=DESKTOP-3PNIRUL\\SQLEXPRESS;Initial Catalog=project;Integrated Securit" +
+    "y=True";
             this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
             // 
             // Match

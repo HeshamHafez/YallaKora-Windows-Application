@@ -159,12 +159,12 @@ namespace yallakora_App
             string str = comboTeam1.Text;
             ComboKeys found = team1Players.Find(x => x.name.Contains(str));
             selected_playerId = found.value;
-
             teamScored = 1;
-            if (comboTeam1.SelectedIndex != -1 && comboTeam2.SelectedIndex != -1)
-            {
-                comboTeam2.SelectedIndex = -1;
-            }
+
+        }
+        private void comboTeam1_Click(object sender, EventArgs e)
+        {
+            comboTeam2.SelectedIndex = -1;
         }
 
         private void comboTeam2_SelectedIndexChanged(object sender, EventArgs e)
@@ -175,13 +175,14 @@ namespace yallakora_App
             string str = comboTeam2.Text;
             ComboKeys found = team2Players.Find(x => x.name.Contains(str));
             selected_playerId = found.value;
-
             teamScored = 2;
-            if(comboTeam1.SelectedIndex != -1 && comboTeam2.SelectedIndex != -1)
-            {
-                comboTeam1.SelectedIndex = -1;
-            }
         }
+        private void comboTeam2_Click(object sender, EventArgs e)
+        {
+            comboTeam1.SelectedIndex = -1;
+        }
+
+
         private int team1Counter;
         private int team2Counter;
         private void btnSaveInfo_Click(object sender, EventArgs e)
@@ -205,6 +206,7 @@ namespace yallakora_App
                     if ((int.Parse(tbGoals.Text) + team1Counter) > team1score)
                     {
                         MessageBox.Show("Entered goals are more than match score");
+                        MessageBox.Show(team1Counter.ToString(), team1score.ToString());
                         sqlConnection1.Close();
                         return;
                     }
@@ -398,5 +400,7 @@ namespace yallakora_App
                 }
             }
         }
+
+        
     }
 }

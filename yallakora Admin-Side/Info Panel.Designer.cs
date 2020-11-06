@@ -265,6 +265,7 @@
             this.comboTeam2.Size = new System.Drawing.Size(151, 21);
             this.comboTeam2.TabIndex = 82;
             this.comboTeam2.SelectedIndexChanged += new System.EventHandler(this.comboTeam2_SelectedIndexChanged);
+            this.comboTeam2.Click += new System.EventHandler(this.comboTeam2_Click);
             // 
             // tbRedCards
             // 
@@ -303,6 +304,7 @@
             this.comboTeam1.Size = new System.Drawing.Size(151, 21);
             this.comboTeam1.TabIndex = 78;
             this.comboTeam1.SelectedIndexChanged += new System.EventHandler(this.comboTeam1_SelectedIndexChanged);
+            this.comboTeam1.Click += new System.EventHandler(this.comboTeam1_Click);
             // 
             // btnSaveInfo
             // 
@@ -323,7 +325,8 @@
             // 
             // sqlConnection1
             // 
-            this.sqlConnection1.ConnectionString = "Data Source=.;Initial Catalog=project;Integrated Security=True";
+            this.sqlConnection1.ConnectionString = "Data Source=DESKTOP-3PNIRUL\\SQLEXPRESS;Initial Catalog=project;Integrated Securit" +
+    "y=True";
             this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
             // 
             // btnConfirm
